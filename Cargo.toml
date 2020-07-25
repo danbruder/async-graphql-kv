@@ -1,0 +1,19 @@
+[package]
+name = "bank"
+version = "0.1.0"
+authors = ["Dan Bruder <danb@structionsite.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0.114"
+serde_json = "1.0.56"
+bigdecimal = {version = "0.1.2", features = ["serde"]}
+async-graphql = {version = "1.16.13"}
+kv = {version = "0.20.2", features = ["json-value"]}
+uuid = { version = "0.8", features = ["serde", "v4"] }
+tide = "0.12.0"
+async-std = "1.6.2"
+async-graphql-tide = "1.15.13"
+futures = "0.3.5"
